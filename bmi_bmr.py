@@ -23,10 +23,7 @@ ap = aktywność[p]
 #print(S) - tylko kontrolnie, aby mieć pewność że warunek działa
 PPM = 10 * waga + 6.25 * wzrost - 5 * wiek + S
 print("///////////////////////////////////////////////////")
-
-print("Twoja masa ciała BMI to: " + str(round(BMI,2)))
-print("-------------------------------")
-print("Twoja podstawowa przemiana materii to: " + str(PPM))
 kalorie = PPM * ap
-print("-------------------------------")
-print("Twoje zapotrzebowanie kalorie to: " + str(kalorie))
+print("""Masa ciała BMI to: {};
+\nTwoja podstawowa przemiana materii to około: {};
+\nTwoje dzienne zapotrzebowanie na kalorie to: {}. """ .format(round(BMI,2), PPM, kalorie))
